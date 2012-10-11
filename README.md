@@ -18,15 +18,17 @@ Faça uma cópia do repositório e utilize ```bundle install``` para instalar to
 
 Nas configurações você deve colocar todas as necessidades de arquivos de sua aplicação. Recomendamos manter a quantidade de conteúdo baixo e utilizar declarações @import para agrupar os arquivos. Quando inserido um nome de diretório, o mesmo será copiado para a pasta final da aplicação.
 
-> content: **( arquivos e diretórios a serem inclusos no pacote final )**  
-> - "application.css"  
-> - "statics"  
->  
-> network: **( endereços e rotas padrões a serem inclusos no pacote final )**  
-> - '/'  
-> - '/manifest.appcache'  
->  
-> remove_old_files: true **( remover arquivos antigos )**
+```
+content: **( arquivos e diretórios a serem inclusos no pacote final )**  
+  - "application.css"  
+  - "statics"
+
+network: **( endereços e rotas padrões a serem inclusos no pacote final )**  
+  - '/'  
+  - '/manifest.appcache'  
+
+remove_old_files: true **( remover arquivos antigos )**
+```
 
 #### Configurar src/templates/index.rhtml
 
@@ -36,18 +38,17 @@ Este arquivo é a raiz de sua aplicação. É recomendado editar e modificar a s
 
 Em geral, seu aplicativo é composto de apenas uma página física no servidor, mas há casos em que é necessário criar outros tipos de arquivos ou configurações. Neste caso é necessário editar o arquivo ```webapp.rb``` e fazer as devidas modificações.
 
-### Detalhes
+### Estrutura de Diretório
 
-```src/css```
-
+```text
+src/css:
 Arquivos CSS. Suporte à SASS
 
-```src/js```
-
+src/js:
 Aplicação. Consultar documentação da Iugu-UX
 
-```src/statics```
-
+src/statics:
 Arquivos Estáticos
+```
 
-### Consulte a Documentação da [Iugu-UX](http://github.com/iugu/iugu-ux)
+#### Consulte a Documentação da [Iugu-UX](http://github.com/iugu/iugu-ux)
