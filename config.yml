@@ -1,0 +1,9 @@
+content:
+  - "application.css"
+  - "statics"
+
+network:
+  - "/"
+  - "/manifest.appcache"
+
+remove_old_files: true
