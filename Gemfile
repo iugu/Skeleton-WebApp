@@ -15,4 +15,4 @@ gem 'guard-sprockets'
 gem 'yui-compressor'
 gem 'compass'
 
-gem 'iugu-ux', :path => "../iugu-ux"
+gem 'iugu-ux'
