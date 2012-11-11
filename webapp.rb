@@ -1,5 +1,8 @@
 require 'sinatra/base'
 
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 Compass.configuration do |compass|
   compass.sprite_load_path = [ 'src/sprites', IuguUX.sprite_load_path ]
   compass.images_dir = 'src/statics/i'
